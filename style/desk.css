@@ -706,6 +706,14 @@ header .container{
 .contact__informations{
 	padding: 100px 0 0 50px
 }
+.contact__information__line{
+	display: flex;
+	align-items: center;
+	padding: 20px 0;
+}
+.contact__information__line svg{
+	margin-right: 30px;
+}
   #paralax {
     /* The image used */
     background-image: url("../assets/banner.jpg");
@@ -774,3 +782,294 @@ header .container{
 	text-align: center;
 	padding: 10px 0;
   }
+  /* usługi */
+  .services__first{
+	display: flex;
+	padding: 100px 0;
+  }
+  .sidebar {
+      width: 300px;
+  flex-shrink: 0;
+  padding-right: 30px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar li {
+      margin-bottom: 20px;
+	  border-bottom: 1px solid var(--color-blue)
+    }
+
+    .sidebar a {
+      display: flex;
+      height: 40px;
+      align-items: center;
+      text-decoration: none;
+      transition: background-color 1s, color 1s;
+    }
+
+    .sidebar .icon {
+      width: 30px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+	  
+    }
+
+    .sidebar .text {
+      padding-left: 12px;
+      font-weight: 500;
+	  font-size: 1.1rem;
+    }
+
+    /* stan nieaktywny */
+    .sidebar a .icon {
+      background-color: var(--color-grey);
+      color: var(--color-blue);
+	  transition: background-color 1s, color 1s;
+	  transition: width 1s;
+
+    }
+   
+
+    /* stan aktywny */
+    .sidebar a:hover .icon {
+		width: 45px;
+      background-color: var(--color-blue-hover);
+      color: var(--color-white);
+	  transition: width 1s;
+    }
+    .services h3{
+		font-weight: 600;
+		padding-bottom: 20px;
+	}
+	.services__list{
+		padding-bottom: 50px;
+		padding-top: 30px;
+		border-bottom: 1px solid var(--color-blue);
+		margin-bottom: 50px;
+	}
+	.services__list{
+		line-height: 1.5rem;
+	}
+	.services__list h3{
+		font-weight: 600;
+		padding-bottom: 30px;
+		padding-left: 50px;
+		position: relative;
+	}
+	.services__list h3::before{
+		content: "";
+		position: absolute;
+		display: block;
+		width: 30px;
+	height: 0.2rem;
+		background-color: var(--color-blue);
+		top: 12px;
+  left: 0;
+	}
+	.services__list__style{
+		list-style: inside;
+		padding-left: 30px;
+	}
+	.services__about{
+		padding-top: 15px;
+	}
+	/* galeria */
+	#gallery{
+		position: relative;
+	}
+	 #gallery .mySlides {
+    display: none;
+    position: relative;
+  }
+
+  /* Number text (1/6 etc) */
+  .numbertext {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 14px;
+    color: #f2f2f2;
+    background-color: rgba(0,0,0,0.5);
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+
+  /* Image styling */
+  #gallery img {
+    vertical-align: middle;
+    border-radius: 4px;
+  }
+
+  /* Prev/next buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s;
+    user-select: none;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 0 4px 4px 0;
+  }
+  .next {
+    right: 50px;
+    border-radius: 4px 0 0 4px;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  /* Caption text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 8px 16px;
+    color: #f2f2f2;
+    border-radius: 4px;
+    margin-top: 8px;
+  }
+
+  /* Thumbnail images */
+  .row {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  .column {
+    flex: 0 0 16.66%;
+    padding: 4px;
+  }
+  .demo {
+    opacity: 0.6;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: opacity 0.3s, border 0.3s;
+  }
+  .active, .demo:hover {
+    opacity: 1;
+    border-color: #666;
+  }
+  /* kursy */
+  .courses__tails{
+	padding: 100px 0;
+	display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+  .courses-card {
+  border: 1px solid var(--color-blue);
+  overflow: hidden;
+  width: 100%;
+  max-width: 360px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.courses-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.courses-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.courses-wrapper img {
+  display: block;
+  width: 100%;
+  max-height: 300px;
+  padding: 20px;
+  object-fit: cover;
+}
+
+.courses .icon {
+  position: absolute;
+  bottom: -12px;
+  left: 30px;
+  width: 80px;
+  height: 80px;
+  background-color: #3366FF;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.courses .icon img {
+  width: 28px;
+  height: 28px;
+  filter: invert(1);
+}
+
+.courses-card h3 {
+  margin: 32px 16px 12px;
+  font-size: 1.25rem;
+}
+
+.courses-card p {
+  margin: 0 16px 20px;
+  line-height: 1.5;
+  color: var(--color-white);
+  font-size: 0.95rem;
+}
+
+.read-more {
+  margin: 0 16px 24px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: var(--color-grey);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+.read-more span {
+  display: inline-block;
+  margin-left: 4px;
+  transition: margin-left 0.2s;
+}
+
+.read-more:hover {
+  color: #3366FF;
+}
+
+.read-more:hover span {
+  margin-left: 8px;
+}
+.courses .about__text .little__title::after, .testimonials .little__title::after{
+	left: 250px;
+}
+.courses__info{
+	padding-top: 100px;
+}
+/* utrzymanie */
+
+/* maszyny */
+.maszyny{
+	display: flex;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.maszyny div{
+	width: 50%;
+}
+.maszyny .about__text .little__title::after{
+	right: 20px;
+	left: auto;
+}
