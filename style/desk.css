@@ -908,6 +908,8 @@ header .container{
   #gallery img {
     vertical-align: middle;
     border-radius: 4px;
+	max-height: 600px;
+	object-fit: contain;
   }
 
   /* Prev/next buttons */
