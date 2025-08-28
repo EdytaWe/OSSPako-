@@ -29,6 +29,10 @@ h2 {
 h3 {
 	font-size: 1.5rem;
 }
+h4 {
+	font-size: 1.3rem;
+	font-weight: 600;
+}
 .little__title{
 	font-size: 1.2rem;
 	padding-bottom: 10px;
@@ -64,13 +68,8 @@ h3 {
 	text-transform: capitalize;
 	font-weight: 600;
 }
-.btn-blue:hover {
-	background-color: var(--color-darkblue);
-}
+
 .active {
-	border-bottom: 1px solid var(--color-blue);
-}
-.line:hover {
 	border-bottom: 1px solid var(--color-blue);
 }
 .pre__header{
@@ -196,9 +195,6 @@ header .container{
 	color: #fff;
 	font-size: 1rem;
   }
-  .mobile-menu-nav a:hover {
-	color: #3269E7;
-  }
   .arrow {
 	font-size: 0.8rem;
 	color: #777;
@@ -239,7 +235,7 @@ header .container{
 
 .banner__title {
 	position: absolute;
-	bottom: 30%;
+	bottom: 10%;
 	color: var(--color-white);
 	max-width: 70%;
 }
@@ -261,10 +257,6 @@ header .container{
 	font-size: 16px;
 	cursor: pointer;
 }
-#scrollToTop:hover {
-	background-color: var(--color-darkblue);
-}
-
 .tail{
 	display: flex;
 	width: 100%;
@@ -617,6 +609,221 @@ header .container{
 	object-fit: cover;
 	border-radius: 50%;
   }
+
+	/* galeria */
+	#gallery{
+		position: relative;
+	}
+	 #gallery .mySlides {
+    display: none;
+    position: relative;
+  }
+
+  /* Number text (1/6 etc) */
+  .numbertext {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 14px;
+    color: #f2f2f2;
+    background-color: rgba(0,0,0,0.5);
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+
+  /* Image styling */
+  #gallery img {
+    vertical-align: middle;
+    border-radius: 4px;
+	max-height: 600px;
+	object-fit: contain;
+  }
+
+  /* Prev/next buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s;
+    user-select: none;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 0 4px 4px 0;
+  }
+  .next {
+    right: 50px;
+    border-radius: 4px 0 0 4px;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  /* Caption text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 8px 16px;
+    color: #f2f2f2;
+    border-radius: 4px;
+    margin-top: 8px;
+  }
+
+  /* Thumbnail images */
+  .row {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  .column {
+    flex: 0 0 16.66%;
+    padding: 4px;
+  }
+  .demo {
+    opacity: 0.6;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: opacity 0.3s, border 0.3s;
+  }
+  .active, .demo:hover {
+    opacity: 1;
+    border-color: #666;
+  }
+    /* kursy */
+  .courses__tails{
+	padding: 100px 0;
+	display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+  .courses-card {
+  border: 1px solid var(--color-blue);
+  overflow: hidden;
+  width: 100%;
+  max-width: 360px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+.courses-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.courses-wrapper img {
+  display: block;
+  width: 100%;
+  max-height: 300px;
+  padding: 20px;
+  object-fit: cover;
+}
+
+.courses .icon {
+  position: absolute;
+  bottom: -12px;
+  left: 30px;
+  width: 80px;
+  height: 80px;
+  background-color: #3366FF;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.courses .icon img {
+  width: 28px;
+  height: 28px;
+  filter: invert(1);
+}
+
+.courses-card h3 {
+  margin: 32px 16px 12px;
+  font-size: 1.25rem;
+}
+
+.courses-card p {
+  margin: 0 16px 20px;
+  line-height: 1.5;
+  color: var(--color-white);
+  font-size: 0.95rem;
+}
+
+.read-more {
+  margin: 0 16px 24px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: var(--color-grey);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+.read-more span {
+  display: inline-block;
+  margin-left: 4px;
+  transition: margin-left 0.2s;
+}
+
+
+.courses .about__text .little__title::after, .testimonials .little__title::after{
+	left: 250px;
+}
+.courses__info{
+	padding-top: 100px;
+}
+/* utrzymanie */
+.utrzymanie{
+	padding: 50px 0;
+}
+.utrzymanie__tile{
+	border: 2px solid var(--color-blue);
+	padding: 30px;
+	margin-bottom: 20px;
+}
+.utrzymanie h3{
+	padding-bottom: 30px;
+	font-weight: 600;
+	line-height: 1.5rem;
+}
+.utrzymanie .tile__little__title{
+	color: var(--color-blue);
+	font-weight: 600;
+	padding-bottom: 15px;
+}
+.utrzymanie ul{
+	list-style: disc;
+	padding-left: 30px;
+}
+.utrzymanie li{
+	padding-bottom: 8px;
+}
+/* maszyny */
+.maszyny{
+	padding-top: 20px;
+	padding-bottom: 100px;
+}
+.maszyny .little__title::after{
+	display: none;
+}
+.maszyny .about__text .little__title::after{
+	left: 370px;
+}
+#about.gaz {
+	padding-bottom: 100px;
+}
+#about.gaz .little__title::after{
+	display: none;
+}
   #paralax {
     /* The image used */
     background-image: url("../assets/banner.jpg");
@@ -669,9 +876,7 @@ header .container{
   .footer__box li{
 	padding-bottom: 10px;
   }
-  .footer__box li:hover{
-	color: var(--color-blue);
-  }
+
   .footer__contact__button{
 	display: inline-block;
 	margin-top: 50px;
@@ -689,7 +894,7 @@ header .container{
 /* kontakt */
 .contact{
 	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-bottom: 50px;
 }
 
 .contactForm{
@@ -748,7 +953,7 @@ header .container{
 }
 
 .contact__informations{
-	padding: 100px 0;
+	padding: 50px 0;
 }
 .contact__information__line{
 	display: flex;
@@ -761,10 +966,10 @@ header .container{
 
 /* usługi */
   .services__first{
-	padding: 100px 0;
+	padding: 50px 0;
   }
   .services__about{
-	padding-top: 100px;
+	padding-top: 50px;
   }
   .sidebar {
       width: 300px;
@@ -816,12 +1021,7 @@ header .container{
    
 
     /* stan aktywny */
-    .sidebar a:hover .icon {
-		width: 45px;
-      background-color: var(--color-blue-hover);
-      color: var(--color-white);
-	  transition: width 1s;
-    }
+   
     .services h3{
 		font-weight: 600;
 		padding-bottom: 20px;
@@ -886,9 +1086,7 @@ header .container{
     right: 20px;
     border-radius: 4px 0 0 4px;
   }
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
+
 
   /* Caption text */
   .caption-container {
@@ -912,8 +1110,4 @@ header .container{
   }
   .demo {
     display: none;
-  }
-  .active, .demo:hover {
-    opacity: 1;
-    border-color: #666;
   }
